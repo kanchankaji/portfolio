@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.navbar{
+    position: absolute;
+    width: 100%;
+    padding: 30px 0;
+    font-family: "ubuntu",sans-serif;
+    background:rgb(220, 20, 60);
+}
+.navbar .sticky{
+    padding: 30px 0;
+    background: crimson;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: #000;
+}
+.navbar .logo a span{
+    color: #fff;
+}
+.navbar .menu li{
+    list-style:none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color:#000;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition:200ms ease-in;
+}
+.navbar .menu li a:hover{
+    color: #fff;
+    transition: 300ms ease;
+}
+.home{
+    display: flex;
+    background: url("./IMG_20171002_175231~2.jpg");
+    background-size: cover;
+    height: 100vh;
+    color: #000;
+    min-height: 500px;
+    font-family:verdana;
+    font-size: 30px;
+}
+.home .max-width{
+    margin-left: 40px;
+}
+.home .home-content .text-1{
+    font-size: 30px;
+}
+.home .home-content .text-2{
+    font-size: 60px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 50px;
+    margin:5px 0;
+}
+.home .home-content .text-3 span{
+    color:#f00;
+    font-weight: bolder;
+}
+section{
+    background: rgba(0,0,0,0.75);
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("./road.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.container{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:40px 0;
+}
+.container .card:hover{
+    background: rgba(0,0,0,0.2);
+}
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255,255,255,0.05);
+    margin:20px;
+    box-shadow: 10px 15px 35px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+.container .card .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.container .card:hover .content{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+.container .card .content .imgBx{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border:10px solid rgba(0,0,0,0.25)
+}
+.container .card .content .imgBx img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .card .content .contentbx h3{
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+.container .card .content .contentbx h3 span{
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+.container .card .sci{
+    position: absolute;
+    bottom:50px;
+    display: flex;
+}
+.container .card .sci li{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.1s * var(--i));
+}
+.container .card:hover .sci li{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.container .card .sci li a{
+    color:#fff;
+    font-size: 24px;
+}
+
+
+.skills{
+    height: 100vh;
+    background: url("./home.svg");
+    background-size: cover;
+}
+.skills h1{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+}
+.skills h1::after{
+    content:"KR";
+    display:inline-block;
+    color:crimson;
+    font-size: 20px;
+}
+.skills h1 span{
+    color: crimson;
+}
+.skills p{
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 15px;
+    font-weight: bolder;
+}
+.skills ul{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    margin: 30px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  
+    grid-gap: 80px;
+}
+.skills ul li{
+    background: rgba(0,0,0,0.8);
+    border-radius: 30px;
+    padding: 15px;
+    margin: 8px;
+    color: #fff;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}   
+.skills ul li:hover{
+    color:#000;
+    background:rgba(0,0,0,0.5);
+    transition: 200ms ease-in;
+    transform: scale(1.06);
+}
+.skills ul li span{
+    color:crimson;
+    font-weight: bolder;
+}
+.services{
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+}
+.services .dot{
+    background-color: #f00;
+    height: 100px;
+    width: 100px;
+}
+.services h1{
+    color: crimson;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+}
+.services h1::after{
+    content:"KR";
+    display:inline-block;
+    color:crimson;
+    font-size: 20px;
+}
+.services h1 span{
+    color:#fff;
+}
+.services h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    margin: 20px;
+}
+.services span{
+    font-size: 45px;
+    color: crimson;
+}
+.services p{
+    font-size: 35px;
+    color: #fff;
+    margin: 30px;
+    font-family: 'Poppins', sans-serif;
+}
