@@ -9,3 +9,20 @@
   "author": "kanchan,roshan",
   "license": "ISC"
 }
+
+"scripts": {
+    "bootstrap": "netlify dev:exec node ./scripts/bootstrap-fauna-database.js",
+    "docs": "",
+    "start": "netlify dev",
+    "prebuild": "echo 'setup faunaDB' && npm run bootstrap",
+    "build": "react-scripts build"
+  },
+  "devDependencies": {
+    "netlify-cli": "^2.19.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
