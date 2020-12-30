@@ -6,10 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "netlify dev",
-    "prebuild": "echo 'setup faunaDB' && npm run bootstrap",
     "build": "react-scripts build"
-  },
+  }, 
+  "devDependencies": {
+    "netlify-cli": "^2.19.0"
+  }
   "author": "kanchan,roshan",
   "license": "ISC"
 }
+
 
