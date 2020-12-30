@@ -1,10 +1,7 @@
 {
   "name": "portfolio",
   "description": "site",
-  "version": "0",
-  "keywords": [
-    ""
-  ],
+  "version": "1.0",
   "contributors": [
     {
       "name": "kanchan",
@@ -12,21 +9,6 @@
       "web": ""
     }
   ],
-  "maintainers": [
-    {
-      "name": "",
-      "email": "",
-      "web": ""
-    },
-    {
-      "name": "",
-      "email": "",
-      "web": ""
-    }
-  ],
-  "dependencies": {
-    "": ""
-  },
   "repositories": [
     {
       "type": "git",
@@ -35,12 +17,6 @@
     {
       "type": "git",
       "url": "https://github.com/kanchankaji/portfolio"
-    }
-  ],
-  "licenses": [
-    {
-      "name": "",
-      "url": ""
     }
   ]
 }
